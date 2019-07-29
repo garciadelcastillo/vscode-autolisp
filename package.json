@@ -1,9 +1,9 @@
 {
 	"name": "autolisp-language",
-	"displayName": "autolisp language support",
-	"description": "autolisp language syntax highlight and function input support",
-	"version": "1.2.1",
-	"publisher": "jpnacaduser",
+	"displayName": "AutoLISP language package",
+	"description": "AutoLISP language syntax highlight and function input support.",
+	"version": "1.3.0",
+	"publisher": "garciadelcastillo",
 	"engines": {
 		"vscode": "^1.25.0"
 	},
@@ -14,7 +14,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/acaduser/"
+		"url": "https://github.com/garciadelcastillo/vscode-autolisp"
 	},
 	"icon": "images/icon.png",
 	"license": "",
@@ -82,7 +82,7 @@
 				"editor.wordWrap": "on",
 				"editor.wordBasedSuggestions": false,
 				"editor.quickSuggestions": true,
-				"editor.insertSpaces": false,
+				"editor.insertSpaces": true,
 				"editor.tabSize": 4,
 				"files.encoding": "utf8"
 			}
