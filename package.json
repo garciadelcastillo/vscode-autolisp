@@ -1,0 +1,149 @@
+{
+	"name": "autolisp-language",
+	"displayName": "autolisp language support",
+	"description": "autolisp language syntax highlight and function input support",
+	"version": "1.2.1",
+	"publisher": "jpnacaduser",
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Themes",
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/acaduser/"
+	},
+	"icon": "images/icon.png",
+	"license": "",
+	"keywords": [
+		"autolisp",
+		"lisp",
+		"lsp",
+		"autocad"
+	],
+	"activationEvents": [
+		"onCommand:extension.utf8->codePoint",
+		"onCommand:extension.codePoint->utf8"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "autolisp",
+				"aliases": [
+					"Autolisp",
+					"autolisp"
+				],
+				"extensions": [
+					".lsp",
+					".mnl"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "autolispdcl",
+				"aliases": [
+					"AutolispDCL",
+					"autolispdcl"
+				],
+				"extensions": [
+					".dcl"
+				],
+				"configuration": "./language-configuration-dcl.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "autolisp",
+				"scopeName": "source.autolisp",
+				"path": "./syntaxes/autolisp.tmLanguage.json"
+			},
+			{
+				"language": "autolispdcl",
+				"scopeName": "source.autolispdcl",
+				"path": "./syntaxes/autolispdcl.tmLanguage.json"
+			}
+		],
+		"configurationDefaults": {
+			"[autolisp]": {
+				"editor.acceptSuggestionOnEnter": "off",
+				"editor.wordWrap": "on",
+				"editor.wordBasedSuggestions": false,
+				"editor.quickSuggestions": true,
+				"editor.insertSpaces": false,
+				"editor.tabSize": 4,
+				"files.encoding": "utf8"
+			},
+			"[autolispdcl]": {
+				"editor.acceptSuggestionOnEnter": "off",
+				"editor.wordWrap": "on",
+				"editor.wordBasedSuggestions": false,
+				"editor.quickSuggestions": true,
+				"editor.insertSpaces": false,
+				"editor.tabSize": 4,
+				"files.encoding": "utf8"
+			}
+		},
+		"themes": [
+			{
+				"label": "autolisp light theme",
+				"uiTheme": "vs",
+				"path": "./themes/autolisp light-color-theme.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "autolispdcl",
+				"path": "./snippets/snippets-dcl.json"
+			},
+			{
+				"language": "autolisp",
+				"path": "./snippets/snippets-lsp-const.json"
+			},
+			{
+				"language": "autolisp",
+				"path": "./snippets/snippets-lsp-support.json"
+			},
+			{
+				"language": "autolisp",
+				"path": "./snippets/snippets-lsp-symbol.json"
+			},
+			{
+				"language": "autolisp",
+				"path": "./snippets/snippets-lsp-sysvar.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.utf8->codePoint",
+				"title": "utf8->codePoint"
+			},
+			{
+				"command": "extension.codePoint->utf8",
+				"title": "codePoint->utf8"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "extension.utf8->codePoint",
+					"group": "autolispsup@1"
+				},
+				{
+					"when": "editorHasSelection",
+					"command": "extension.codePoint->utf8",
+					"group": "autolispsup@2"
+				}
+			]
+		}
+	},
+	"__metadata": {
+		"id": "34042400-943c-47d5-91f2-566f108c93bb",
+		"publisherId": "0685875a-8255-4c62-9853-fad36103c4f5",
+		"publisherDisplayName": "jpnacaduser"
+	}
+}

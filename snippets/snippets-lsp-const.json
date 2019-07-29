@@ -1,0 +1,8 @@
+{
+	"*error*":{"prefix":"*error*","body":["*error*"],"description":" "},
+	"nil":{"prefix":"nil","body":["nil"],"description":" "},
+	"pause":{"prefix":"pause","body":["pause"],"description":" "},
+	"vl-list*":{"prefix":"vl-list*","body":["vl-list*"],"description":" "},
+	"autoarxload":{"prefix":"autoarxload","body":["autoarxload"],"description":" "},
+	"autoload":{"prefix":"autoload","body":["autoload"],"description":" "}
+}

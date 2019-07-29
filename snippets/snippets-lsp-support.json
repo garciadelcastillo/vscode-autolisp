@@ -1,0 +1,75 @@
+{
+	"(defun c:aaa":{
+		"prefix":"(defun c:aaa",
+		"body":[
+			"(defun c:aaa (/ *error* main doc)",
+			"\t(vl-load-com)",
+			"\t(defun main ()",
+			"\t\t(princ \"\\nHello World\")",
+			"\t\t(vla-StartUndoMark (setq doc (vla-get-ActiveDocument (vlax-get-acad-object))))",
+			"\t\t",
+			"\t\t$0",
+			"\t\t",
+			"\t\t(vla-EndUndoMark doc)",
+			"\t\t(princ)",
+			"\t)",
+			"\t(defun *error*(s)",	
+			"\t\t(princ s)",
+			"\t\t(vla-EndUndoMark doc)",
+			"\t\t(princ)",
+			"\t)",
+			"\t(main)",
+			")",
+			""
+		],
+		"description":" "
+	},
+	"(defun c:bbb":
+	{
+		"prefix":"(defun c:bbb",
+		"body":[
+			"(defun c:bbb (/ *error* doc)",
+			"\t(defun *error*(s)",
+			"\t\t(princ s)",
+			"\t\t(vla-EndUndoMark doc)",
+			"\t\t(princ)",
+			"\t)",
+			"\t(vl-load-com)",
+			"\t(princ \"\\nHello World\")",
+			"\t(vla-StartUndoMark (setq doc (vla-get-ActiveDocument (vlax-get-acad-object))))",
+			"\t\t",
+			"\t$0",
+			"\t\t",
+			"\t(vla-EndUndoMark doc)",
+			"\t(princ)",
+		")"
+		],
+		"description":" "
+	},
+	"(defun getspace":{
+		"prefix":"(defun getspace",
+		"body":[
+			"(defun getspace(d)",
+			"\t(if (and (= (vla-get-ActiveSpace d) 0) (= (vla-get-MSpace d) ':vlax-false))",
+			"\t\t(vla-get-PaperSpace d)",
+			"\t\t(vla-get-ModelSpace d)",
+			"\t)",
+			")"
+		],
+		"description":" "
+	},
+	"(defun ss->enames":{
+		"prefix":"(defun ss->enames",
+		"body":[
+			"(defun ss->enames (ss / tmp i)",
+			"\t(setq i 0)",
+			"\t(repeat (sslength ss) (setq tmp (cons (ssname ss i) tmp) i (1+ i)))",
+			"\t(reverse tmp)",
+			")"
+				],
+		"description":" "
+	}
+
+
+
+}
