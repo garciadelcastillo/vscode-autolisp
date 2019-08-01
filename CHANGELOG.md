@@ -1,4 +1,9 @@
 # Change Log
+### [1.4.1] 2019/08/01
+- `t` and `nil` now highlight as constants.
+- `*muffed*` variables now highlight as global vars.
+- Highlighting of function names.
+
 ### [1.4.0] 2019/08/01
 - Improved syntax of numeric values
   
