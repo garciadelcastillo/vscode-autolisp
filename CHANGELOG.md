@@ -1,5 +1,8 @@
 # Change Log
-### [1.5.1] 2019/08/01
+### [1.5.0] 2019/08/01
+- File types.
+
+### [1.5.0] 2019/08/01
 - `t` and `nil` now highlight as constants.
 - `*muffed*` variables now highlight as global vars.
 - Highlighting of function names.
