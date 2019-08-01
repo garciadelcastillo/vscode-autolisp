@@ -12,7 +12,7 @@
     "autoClosingPairs": [
         { "open": "(", "close": ")"},
         { "open": "\"", "close": "\"", "notIn": ["string"]},
-        { "open": "`", "close": "`"}  // this is just for markdown-flavored comments :)
+        { "open": "`", "close": "`"}  // `code span` for markdown-flavored comments :)
     ],
     // Symbols that can be used to surround a selection/
     "surroundingPairs": [
