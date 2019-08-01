@@ -2,7 +2,7 @@
 	"name": "autolisp-language",
 	"displayName": "AutoLISP language package",
 	"description": "AutoLISP language syntax highlight and function input support.",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"publisher": "garciadelcastillo",
 	"engines": {
 		"vscode": "^1.25.0"
