@@ -1,5 +1,5 @@
 # Change Log
-### [1.3.2] 2019/08/01
+### [1.4.0] 2019/08/01
 - Improved syntax of numeric values
   
 ### [1.3.1] 2019/07/29
