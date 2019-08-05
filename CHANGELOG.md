@@ -1,5 +1,8 @@
 # Change Log
-### [1.5.0] 2019/08/01
+### [1.5.2] 2019/08/05
+- Syntax highlighting of function names is now case-insensitive.
+
+### [1.5.1] 2019/08/01
 - File types.
 
 ### [1.5.0] 2019/08/01
